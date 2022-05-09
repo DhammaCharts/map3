@@ -3,15 +3,15 @@ import Layer from 'ol/layer/Layer';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import {composeCssTransform} from 'ol/transform';
-import Suttapitaka from './suttapitaka.svg'
+import Suttapitaka from './suttapitaka-min.svg'
 
 const map = new Map({
   target: 'map',
   view: new View({
     center: [0, 0],
-    extent: [-180, -90, 180, 90],
+    extent: [-180*4, -90*4, 180*4, 90*4],
     projection: 'EPSG:4326',
-    zoom: 2,
+    zoom: 0
   }),
 });
 
@@ -25,8 +25,8 @@ xhr.addEventListener('load', function () {
 });
 xhr.send();
 
-const width = 2560;
-const height = 1280;
+const width = 3456;
+const height = 5325;
 const svgResolution = 360 / width;
 svgContainer.style.width = width + 'px';
 svgContainer.style.height = height + 'px';
