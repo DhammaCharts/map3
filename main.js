@@ -3,7 +3,7 @@ import Layer from 'ol/layer/Layer';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import {composeCssTransform} from 'ol/transform';
-import Suttapitaka from './suttapitaka-min.svg'
+import Suttapitaka from './suttapitaka.svg'
 
 const map = new Map({
   target: 'map',
